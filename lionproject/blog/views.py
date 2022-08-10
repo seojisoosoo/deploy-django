@@ -57,7 +57,7 @@ def update(request, id):
                 'body': update.body, }
         })
 def delete(request, id):
-    if request.method == "DELETE":
+    if request.method == 'DELETE':
         delete = get_object_or_404(Blog, pk=id)
         # delete = Blog.objects.get(id=id-1)
 
